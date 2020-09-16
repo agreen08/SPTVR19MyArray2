@@ -36,9 +36,13 @@ class App {
         
         }
         System.out.println();
-        System.out.println("Среднее арифметическое...");
-        System.out.println((double)(sum-min-max) / (numbers.length - 2));
-        
-
+        System.out.print("Среднее арифметическое");
+        System.out.print(" без учета минимального (");
+        System.out.print(min);System.out.println(")");
+        System.out.print("и максимального (");
+        System.out.print(max);
+        System.out.print(") числа: ");
+        System.out.printf("%.2f%n",(double)(sum-min-max)/(numbers.length - 2));
+        System.out.println("--- end MyArray ---");
     }
 }
